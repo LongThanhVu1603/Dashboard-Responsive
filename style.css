@@ -13,6 +13,10 @@ h2 {
     overflow: hidden;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     overflow-x:hidden;
 }
@@ -93,7 +97,6 @@ body {
     background-color: silver;
     width: calc(100% - 300px);
     left: 300px;
-    height: 100vh;
     transition: .5s;
 }
 
@@ -200,4 +203,139 @@ body {
 .cardBox .card .iconBox i{
     font-size: 40px;
     color: #003147;
+}
+
+/* END CARDBOX */
+
+/* DETAILS */
+
+.details {
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    padding-top: 0;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 2fr 1fr;
+    height: 100%;
+}
+
+.details .recentOrders {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    display: grid;
+    min-height: 250px;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.btn {
+    position: relative;
+    padding: 5px;
+    background-color: #03a9f4;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.details .recentOrders table
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.details .recentOrders table thead td {
+    font-weight: 600;
+    padding: 10px 5px;
+}
+
+.details .recentOrders table thead td:last-child,
+.details .recentOrders table tbody td:last-child{
+    text-align: right;
+}
+
+.details .recentOrders table tbody td {
+    padding: 10px 5px;
+}
+
+.details .recentOrders table tr:last-child{
+    border-bottom: none;
+}
+
+.details .recentOrders table tr {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.details .recentOrders table tbody tr:hover{
+    background-color: #03a9f4;
+    color: #fff;
+}
+
+.status{
+    background-color: aqua;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 2px 5px;
+}
+
+.Delivered {
+    background-color: #8de02c;
+}
+
+.Pending {
+    background-color: #f9ca3f;
+}
+
+.Return {
+    background-color: #f00;
+}
+
+.Progress{
+    background-color: #1795ce;
+}
+
+.details .recentCustomers{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+}
+
+.recentCustomers .imgBox{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.recentCustomers .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.recentCustomers h4{
+    padding-left: 20px;
+}
+
+.recentCustomers span {
+    opacity: .8;
+    font-size: 12px;
+}
+
+.recentCustomers table tbody tr td {
+    padding: 10px 0;
 }
